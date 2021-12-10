@@ -1,0 +1,35 @@
+
+mysql> status
+--------------
+mysql  Ver 8.0.27-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
+
+Connection id:          22
+Current database:
+Current user:           root@localhost
+SSL:                    Not in use
+Current pager:          stdout
+Using outfile:          ''
+Using delimiter:        ;
+Server version:         8.0.27-0ubuntu0.20.04.1 (Ubuntu)
+Protocol version:       10
+Connection:             Localhost via UNIX socket
+Server characterset:    utf8mb4              <== character set 확인
+Db     characterset:    utf8mb4
+Client characterset:    utf8mb4
+Conn.  characterset:    utf8mb4
+UNIX socket:            /var/run/mysqld/mysqld.sock
+Binary data as:         Hexadecimal
+Uptime:                 33 min 9 sec
+
+Threads: 2  Questions: 103  Slow queries: 0  Opens: 565  Flush tables: 3  Open tables: 101  Queries per second avg: 0.051
+
+
+
+DB서버 start
+sudo /etc/init.d/mysql start
+
+DB서버 stop
+service mysql stop
+
+접속
+mysql -u root
