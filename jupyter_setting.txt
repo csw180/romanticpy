@@ -1,0 +1,19 @@
+$ python
+>>> from notebook.auth import passwd
+>>> passwd()
+나오는 내용 캡쳐해놓을것
+ex)  "aragon2:$~~~ "
+
+jupyter notebook --generate-config
+sudo vi ~/.jupyter/jupyter_notebook_config.py
+
+c.NotebookApp.allow_origin = '*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.password = '주피터 노트북에서 설정한 후 패스워드'
+
+vi  ~/.bashrc
+export BROWSER='/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
+> 윈도즈에서 chrome 이 저절로 뜨게 만든다..
+
+nohup jupyter notebook &
+
