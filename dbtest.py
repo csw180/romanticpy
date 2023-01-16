@@ -1,7 +1,7 @@
 import pymysql
 
-connection = pymysql.connect(host='localhost', port=3306, db='Investar', \
-    user='root', passwd ='', autocommit=True)
+connection = pymysql.connect(host='localhost', port=3306, db='home', \
+    user='root', passwd ='arfrom', autocommit=True)
 
 cursor = connection.cursor()
 cursor.execute('select version()')
