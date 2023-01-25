@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS company_info (
     code VARCHAR(20),
     name VARCHAR(40),
     market  VARCHAR(20),
+    last_update VARCHAR(8),
     PRIMARY KEY (code))
 
 ```
